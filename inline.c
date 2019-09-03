@@ -1,6 +1,8 @@
 #include <stdio.h>
 #define xchg(x,y)\
-    __asm__("xchg %1, %0":"+m"(x),"+r"(y))
+    __asm__("xchg %1, %0":"+m"(x),"+r"(y))  
+    //The XCHG (exchange data) instruction exchanges the contents of two operands.
+
 
 
 int main (){

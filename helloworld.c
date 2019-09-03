@@ -1,7 +1,7 @@
-extern void CMAIN();
+extern void asmPrint();
 
 int main()
 {
-  CMAIN();
+  asmPrint();
   return 0;
 }
