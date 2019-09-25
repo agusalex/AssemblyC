@@ -1,13 +1,14 @@
 #include <string.h>
-extern void asmPrint
+#include <stdio.h>
+extern int asmPrint
 (char * msg, int lenght);
 
-void asm_Print(char * msg){
-  asmPrint(msg,strlen(msg));
+int asm_Print(char * msg){
+  return asmPrint(msg,strlen(msg));
 }
 int main()
 {
-  char * msg = "Hi\n";
-  asm_Print(msg);
+  char * msg = "Hola Mundo!\n";
+  int value = asm_Print(msg);
   return 0;
 }
